@@ -17,6 +17,9 @@ onmessage = function(e) {
             let isCompleted = currentTime >= endTime
             if(isCompleted){
                 clearInterval(timerId);
+                timerId = undefined;
+                endDifference = undefined;
+                paused = false
                 // remainingTime.textContent = '00:00:00'
                 postMessage('completed')
             }else{

@@ -1,0 +1,30 @@
+{
+  "name": "pomodaro-clock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^5.2.5",
+    "html-webpack-plugin": "^5.3.1",
+    "mini-css-extract-plugin": "^1.6.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.37.1",
+    "webpack-cli": "^4.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adithya188288/pomodaro-clock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adithya188288/pomodaro-clock/issues"
+  },
+  "homepage": "https://github.com/Adithya188288/pomodaro-clock#readme"
+}
