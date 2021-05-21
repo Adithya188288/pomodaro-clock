@@ -9,7 +9,7 @@ let remainingTime = document.getElementById('result');
 let timerId = undefined, startTime,endTime;
 let end=30000; // 30 seconds
 let secondsElapsed = 0; 
-let timeWorker = new Worker('../workers/timer.js')
+let timeWorker = new Worker('./timer.js')
 
 start.onclick = function(){
     if (window.Worker) {
