@@ -10,7 +10,7 @@ let startTime,endTime;
 let end=30000; // 30 seconds
 var endDifference = undefined;
 var paused = false; 
-let timeWorker = new Worker('../js/timer.js');
+let timeWorker = new Worker('./timer.js');
 let resetClock = false;
 
 start.onclick = function(){
