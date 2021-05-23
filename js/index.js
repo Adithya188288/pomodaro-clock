@@ -1,5 +1,5 @@
 console.log("Hi from JS");
-// require('../css/index.css');
+require('../css/index.css');
 
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
