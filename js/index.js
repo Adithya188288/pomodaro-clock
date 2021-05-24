@@ -5,6 +5,7 @@ let start = document.getElementById('start');
 let stop = document.getElementById('stop');
 let reset = document.getElementById('reset');
 let remainingTime = document.getElementById('result');
+let timeToStop = document.getElementById('timeToStop');
 
 let startTime,endTime;
 let end=30000; // 30 seconds
@@ -15,15 +16,23 @@ let resetClock = false;
 
 start.onclick = function(){
     if (window.Worker) {
+
+        if(timeToStop.value && !paused){
+            end = timeToStop.value * 1000;
+        }
+
         if(resetClock){
             resetClock = false;
         }
+        
         if(paused){
             paused = false;
             end = endDifference
         }else{
             endDifference = end;
         }
+
+
         timeWorker.postMessage("Sending Message From Main Thread")
         timeWorker.postMessage('start')
         startTime = Date.now();
