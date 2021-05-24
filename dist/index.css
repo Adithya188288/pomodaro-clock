@@ -18,3 +18,10 @@
     margin: 15px;
     cursor: pointer;
 }
+
+#timeToStop {
+    display: block;
+    margin: 0 auto;
+    max-width: 250px;
+    width: 250px;
+}
